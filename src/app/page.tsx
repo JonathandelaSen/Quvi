@@ -10,7 +10,7 @@ export default async function Home () {
     redirect('/login')
   }
 
-  const { data: qvs } = await supabase.from('quvis').select('*')
+  const { data: qvs } = await supabase.from('quvis').select('*, users(*)')
 
   return (
       <div className="flex flex-col items-center">
