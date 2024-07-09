@@ -1,6 +1,7 @@
 import { createSupabaseServerClient } from '@/sections/shared/supabase/supabaseServerClient'
 import { AuthButtonServer } from '@/sections/shared/components/auth-button-server'
 import { redirect } from 'next/navigation'
+import { QvsList } from '@/app/sections/qvs/qvs-list'
 
 export default async function Home () {
   const supabase = createSupabaseServerClient()
@@ -13,13 +14,10 @@ export default async function Home () {
   const { data: qvs } = await supabase.from('quvis').select('*, users(*)')
 
   return (
-      <div className="flex flex-col items-center">
-        <p className="bg-amber-800">Hello 👋</p>
-        <AuthButtonServer/>
-
-        <pre>
-          {JSON.stringify(qvs, null, 2)}
-        </pre>
-      </div>
+    <main className="flex min-h-screen flex-col items-center">
+      <p className="bg-amber-800">Hello 👋</p>
+      <AuthButtonServer/>
+      <QvsList qvs={qvs}/>
+    </main>
   )
 }

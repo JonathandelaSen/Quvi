@@ -24,19 +24,20 @@ export function AuthButtonClient ({ session }: { session: Session | null }) {
   }
 
   return (
-      <header className="">
-          {
-              session !== null
-                ? (
-                      <Button type="button" className="bg-primary hover:bg-primary/90 text-white" onClick={handleSignOut}>
+    <header className="">
+      {
+        session !== null
+          ? (
+
+            <Button type="button" className="bg-primary hover:bg-primary/90 text-white" onClick={handleSignOut}>
                           Sign out
-                      </Button>)
+            </Button>)
 
-                : (<Button type="button" className="bg-primary hover:bg-primary/90 text-white mr-16" onClick={handleSignIn}>
+          : (<Button type="button" className="bg-primary hover:bg-primary/90 text-white mr-16" onClick={handleSignIn}>
                       Sign in
-                  </Button>)
-          }
+          </Button>)
+      }
 
-      </header>
+    </header>
   )
 }
