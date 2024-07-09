@@ -5,9 +5,7 @@ export async function AuthButtonServer () {
   const supabase = createSupabaseServerClient()
   const { data: { session } } = await supabase.auth.getSession()
 
-  console.log('AuthButtonServer', session)
   return (
-
     <AuthButtonClient session={session} />
   )
 }
