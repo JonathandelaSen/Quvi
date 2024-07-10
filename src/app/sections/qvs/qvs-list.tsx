@@ -22,7 +22,7 @@ export function QvsList({ qvs }: { qvs: Qv[] | null }) {
               <div className="ml-4 flex flex-col">
                 <span className="text-sm text-white/60">{qv.users?.name}</span>
                 <span className="text-sm text-white/60">
-                  {qv.users?.username}
+                  @{qv.users?.username}
                 </span>
               </div>
               <Button className="ml-auto rounded-full bg-primary/20">
