@@ -22,6 +22,10 @@
     "react/react-in-jsx-scope": "off",
     "@typescript-eslint/no-floating-promises": "off",
     "@typescript-eslint/explicit-function-return-type": "off",
-    "@typescript-eslint/no-misused-promises": "off"
+    "@typescript-eslint/no-misused-promises": "off",
+    "@typescript-eslint/space-before-function-paren": "off",  // Esta regla entra en conflicto con prettier al hacer el auto fix on save
+    "@typescript-eslint/consistent-type-definitions": "off",
+    "@typescript-eslint/indent": "off" //se lia con algunos casos específicos de prettier
+
   }
 }

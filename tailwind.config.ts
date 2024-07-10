@@ -22,7 +22,9 @@ const config = {
       },
       white: '#FFFFFF',
       black: '#000',
-      transparent: 'rgba(255,255,255,0)'
+      transparent: 'rgba(255,255,255,0)',
+      'bg-qvs': '#18181b',
+      background: '#15202b'
     },
     container: {
       center: true,
@@ -49,7 +51,7 @@ const config = {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
-            'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))'
+          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))'
       }
     }
   },
