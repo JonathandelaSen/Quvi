@@ -32,7 +32,7 @@ export function QvsList({ qvs }: { qvs: Qv[] | null }) {
 
             <p>{qv.content}</p>
 
-            <pre key={qv?.id ?? ''}>{JSON.stringify(qv, null, 2)}</pre>
+            {/* <pre key={qv?.id ?? ''}>{JSON.stringify(qv, null, 2)}</pre> */}
           </div>
         )
       })}

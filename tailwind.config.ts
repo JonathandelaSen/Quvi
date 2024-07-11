@@ -24,7 +24,10 @@ const config = {
       black: '#000',
       transparent: 'rgba(255,255,255,0)',
       'bg-qvs': '#18181b',
-      background: '#15202b'
+      background: '#15202b',
+      text: {
+        error: '#ee192b'
+      }
     },
     container: {
       center: true,

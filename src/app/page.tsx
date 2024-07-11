@@ -2,7 +2,7 @@ import { createSupabaseServerClient } from '@/sections/shared/supabase/supabaseS
 import { AuthButtonServer } from '@/sections/shared/components/auth-button-server'
 import { redirect } from 'next/navigation'
 import { QvsList } from '@/app/sections/qvs/qvs-list'
-import { QvsCreate } from '@/app/sections/qvs/qvs-create'
+import { QvsCreateForm } from '@/app/sections/qvs/qvs-create-form'
 
 export default async function Home() {
   const supabase = createSupabaseServerClient()
@@ -23,7 +23,7 @@ export default async function Home() {
       <p className="bg-amber-800">Hello 👋</p>
       <AuthButtonServer />
       <section className="mx-auto flex w-full max-w-[600px] flex-col gap-24">
-        <QvsCreate />
+        <QvsCreateForm />
         <QvsList qvs={qvs} />
       </section>
     </main>
